@@ -1,0 +1,8 @@
+/*Using a variable so need to import the variables file*/
+@import "./vars.css";
+
+.App {
+    background-color: var(--color-bg);
+    width:100%;
+    height:100vh;
+}

@@ -1,0 +1,53 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    z-index: 2;
+    /*vertical margin 0 horizontal margin 10%*/
+    margin: 0 10%;
+}
+
+.title {
+    font-size:25px;
+    font-weight: 600;
+    text-decoration:none;
+    color: var(--color-text);
+}
+
+.menu {
+    display:flex;
+}
+
+.menuItems{
+    display: flex;
+    gap:40px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.menuItems a {
+    font-size:25px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+@media screen and (max-width:830px){
+    .navbar{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}
+
+.menu {
+    position:absolute;
+    right: 0px;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items:flex-end;
+    gap: 10px;
+    z-index: 3;
+}
